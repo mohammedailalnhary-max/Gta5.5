@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta name="theme-color" content="#07131c">
+  <meta name="description" content="Vice World — a mobile-first open-world 3D browser game prototype.">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <title>VICE WORLD | Open World Prototype</title>
+</head>
+<body>
+  <div id="game"></div>
+  <div id="loading"><div class="load-logo">VICE<span>WORLD</span></div><div class="load-sub">COASTAL CITY • PHASE 01</div><div class="load-track"><i></i></div><div id="load-status">Building the city...</div></div>
+  <header class="topbar">
+    <div class="brand">VICE<span>WORLD</span><small>OPEN WORLD / PROTOTYPE 0.1</small></div>
+    <div class="top-right"><span class="live-dot"></span><span id="mode-label">ON FOOT</span><button id="pause-btn" aria-label="Pause">Ⅱ</button></div>
+  </header>
+  <section class="mission-card">
+    <div class="eyebrow">CURRENT OBJECTIVE</div>
+    <div class="mission-title" id="mission-title">A NEW DAY</div>
+    <div class="mission-desc" id="mission-desc">Explore the waterfront and reach the glowing marker.</div>
+    <div class="mission-progress"><i id="mission-progress"></i></div>
+  </section>
+  <div class="location-pill"><span>◉</span><span id="location-name">OCEAN DRIVE DISTRICT</span></div>
+  <div id="hint">Move toward the cyan marker to explore the city.</div>
+  <div class="crosshair">+</div>
+  <div class="mobile-ui" id="mobile-ui">
+    <div class="stick-zone" id="stick-zone"><div class="stick-base"><div class="stick-knob" id="stick-knob"></div></div></div>
+    <div class="action-stack">
+      <button class="action-btn small" id="look-btn">LOOK</button>
+      <button class="action-btn" id="jump-btn">JUMP</button>
+      <button class="action-btn" id="sprint-btn">RUN</button>
+      <button class="action-btn primary" id="interact-btn">ENTER</button>
+    </div>
+    <div class="drive-controls" id="drive-controls">
+      <button class="action-btn" id="left-btn">◀</button><button class="action-btn" id="brake-btn">BRAKE</button>
+      <button class="action-btn primary" id="gas-btn">GAS</button><button class="action-btn" id="right-btn">▶</button>
+    </div>
+    <div class="camera-zone" id="camera-zone"></div>
+  </div>
+  <div class="desktop-help">WASD MOVE · SHIFT RUN · SPACE JUMP · E ENTER/EXIT · MOUSE DRAG LOOK · ESC PAUSE</div>
+  <div id="pause-overlay" class="hidden"><div class="pause-panel"><div class="eyebrow">VICE WORLD</div><h1>PAUSED</h1><p>Phase 01 · Coastal District</p><button id="resume-btn" class="resume-btn">RESUME GAME</button><button id="save-btn" class="secondary-btn">SAVE PROGRESS</button><div id="save-status">Progress saves locally on this device.</div></div></div>
+  <div class="bottom-note">PROTOTYPE BUILD · ORIGINAL WORLD · MORE DISTRICTS TO COME</div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

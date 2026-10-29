@@ -1,0 +1,11 @@
+{
+  "name": "Vice World — Coastal City",
+  "short_name": "Vice World",
+  "description": "A third-person 3D open-world browser game prototype.",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "landscape",
+  "background_color": "#07131c",
+  "theme_color": "#07131c",
+  "icons": []
+}
